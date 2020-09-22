@@ -53,13 +53,13 @@ class Cell:
 		bottom_left = (int(self.i * self.w) + 100, int(((self.j + 1) * self.w)) + 100)
 		button_right = (int((self.i + 1) * self.w) + 100, int((self.j + 1) * self.w) + 100)
 		if self.up:
-			pygame.draw.line(self.scr, (255, 255, 255), top_left, top_right, 5)
+			pygame.draw.line(self.scr, (255, 255, 255), top_left, top_right, int(self.w / 3))
 		if self.left:
-			pygame.draw.line(self.scr, (255, 255, 255), top_left, bottom_left, 5)
+			pygame.draw.line(self.scr, (255, 255, 255), top_left, bottom_left, int(self.w / 3))
 		if self.right:
-			pygame.draw.line(self.scr, (255, 255, 255), top_right, button_right, 5)
+			pygame.draw.line(self.scr, (255, 255, 255), top_right, button_right, int(self.w / 3))
 		if self.down:
-			pygame.draw.line(self.scr, (255, 255, 255), bottom_left, button_right, 2)
+			pygame.draw.line(self.scr, (255, 255, 255), bottom_left, button_right, int(self.w / 3))
 		# line(surface, color, start_pos, end_pos, width)
 		return
 

@@ -14,7 +14,7 @@ import numpy as np
 from cell import Cell
 import random
 
-cols = 40
+cols = 70
 width, height = 800, 800
 scr = pygame.display.set_mode((width, height))
 cells = []
@@ -65,5 +65,4 @@ while True:
 			exit()
 	for cell in cells.flatten():
 		cell.blit()
-	cells[0][0].rect(cells[0][0].green)
 	
