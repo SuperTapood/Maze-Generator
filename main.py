@@ -14,7 +14,7 @@ import numpy as np
 from cell import Cell
 import random
 
-cols = 70
+cols = 20
 width, height = 800, 800
 scr = pygame.display.set_mode((width, height))
 cells = []
